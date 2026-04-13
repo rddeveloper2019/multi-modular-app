@@ -56,7 +56,11 @@ melos:
       env:
         GREETING: Hey
     upgrade:
-      run: flutter pub upgrade --major-versions
+      run: flutter pub outdated && flutter pub upgrade --major-versions
+    test:
+      run: melos exec --concurrency=1 -- flutter test
+    cbs:
+      run: melos clean && melos bs
 
 workspace:
   - core/data
