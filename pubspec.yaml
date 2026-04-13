@@ -1,14 +1,39 @@
 name: multimodular_app
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
 environment:
-  sdk: ">=3.11.3 <4.0.0"
-dev_dependencies:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
   melos: ^7.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
 melos:
   useRootAsPackage: true
-  categories:
-    app:
-      - "."
-    packages:
-      - core/**
-      - features/**
-      - features/auth/**
+
+workspace:
+  - core/data
+  - core/domain
+  - core/presentation
+  - features/auth/login
+  - features/auth/register
+  - features/home/main
+  - features/movies
+  - features/settings/app_settings
+  - features/settings/profile
