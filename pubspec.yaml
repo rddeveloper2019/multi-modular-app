@@ -48,6 +48,15 @@ melos:
 
       hooks:
         # post: dart pub run build_runner build -d
+  scripts:
+    hello:
+      name: hey
+      description: Greet the world
+      run: echo $GREETING World
+      env:
+        GREETING: Hey
+    upgrade:
+      run: flutter pub upgrade --major-versions
 
 workspace:
   - core/data
