@@ -1,0 +1,4 @@
+name: multimodular_app
+packages:
+  - core/**
+  - features/**
