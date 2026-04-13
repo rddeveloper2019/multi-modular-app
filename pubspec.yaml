@@ -13,19 +13,41 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
-  melos: ^7.5.1
+  dio: 5.9.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^6.0.0
+  melos: ^7.5.1
+  build_runner: ^2.3.3
 
 flutter:
   uses-material-design: true
 
 melos:
   useRootAsPackage: true
+  command:
+    bootstrap:
+      environment:
+        sdk: ^3.11.3
+        flutter: ">=3.0.0 <4.0.0"
+      dependencies:
+        dio: 5.9.2
+        cupertino_icons:
+          ^1.0.8
+          # git: https://github.com/SamJakob/uni_links_macos.git
+
+      dev_dependencies:
+        flutter_lints: ^6.0.0
+
+        flutter_test:
+          sdk: flutter
+        build_runner: ^2.3.3
+
+      hooks:
+        # post: dart pub run build_runner build -d
 
 workspace:
   - core/data
