@@ -6,7 +6,7 @@ import 'package:multimodular_app/di/injection.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  configureDependencies(Environment.prod);
+  configureDependencies(Environment.dev);
   runApp(const MyApp());
 }
 
@@ -45,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     final appSettingsProvider = getIt<AppSettingsProvider>();
     final sessionProvider = getIt<SessionProvider>();
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -55,12 +56,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: .center,
           children: [
-            Text('App language: ${appSettingsProvider.getLanguage()}'),
-            Text('App language: ${appSettingsProvider.getTheme()}'),
-            Text('App language: ${sessionProvider.getUserId()}'),
-            Text('App language: ${sessionProvider.getClientId()}'),
-            Text('App language: ${sessionProvider.getAccessToken()}'),
-            Text('App language: ${sessionProvider.getRefreshToken()}'),
+            Text('App language: ${appSettingsProvider.getAppLanguage()}'),
+            Text('App Theme: ${appSettingsProvider.getTheme()}'),
+            Text('App Theme: ${sessionProvider.getClientId()}'),
+            Text('App Theme: ${sessionProvider.getUserId()}'),
+            Text('App Theme: ${sessionProvider.getAccessToken()}'),
+            Text('App Theme: ${sessionProvider.getRefreshToken()}'),
           ],
         ),
       ),

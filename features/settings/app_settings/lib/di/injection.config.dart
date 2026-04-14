@@ -25,11 +25,11 @@ extension GetItInjectableX on _i174.GetIt {
   }) {
     final gh = _i526.GetItHelper(this, environment, environmentFilter);
     gh.factory<_i362.AppSettingsProvider>(
-      () => _i94.DevAppSettingsProvider(),
+      () => _i94.DevAppSettingsProviderImpl(),
       registerFor: {_dev},
     );
     gh.factory<_i362.AppSettingsProvider>(
-      () => _i94.ProdAppSettingsProvider(),
+      () => _i94.ProdAppSettingsProviderImpl(),
       registerFor: {_prod},
     );
     return this;

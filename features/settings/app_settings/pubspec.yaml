@@ -9,6 +9,8 @@ environment:
   flutter: ">=3.0.0 <4.0.0"
 
 dependencies:
+  multimodular_app:
+    path: ../../..
   flutter:
     sdk: flutter
   get_it: ^9.2.1

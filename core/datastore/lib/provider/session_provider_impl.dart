@@ -5,7 +5,7 @@ import 'package:injectable/injectable.dart';
 class ProdSessionProviderImpl implements SessionProvider {
   @override
   String getAccessToken() {
-    return 'accessToken prod';
+    return 'access token prod';
   }
 
   @override
@@ -28,7 +28,7 @@ class ProdSessionProviderImpl implements SessionProvider {
 class DevSessionProviderImpl implements SessionProvider {
   @override
   String getAccessToken() {
-    return 'accessToken dev';
+    return 'access token dev';
   }
 
   @override

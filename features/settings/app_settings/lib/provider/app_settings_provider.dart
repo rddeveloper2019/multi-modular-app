@@ -1,4 +1,4 @@
 abstract class AppSettingsProvider {
-  String getLanguage();
+  String getAppLanguage();
   String getTheme();
 }
