@@ -9,7 +9,7 @@ class ProdAppSettingsProviderImpl implements AppSettingsProvider {
   }
 
   @override
-  String themeType() {
+  String getTheme() {
     return "dark";
   }
 }
@@ -22,7 +22,7 @@ class DevAppSettingsProviderImpl implements AppSettingsProvider {
   }
 
   @override
-  String themeType() {
+  String getTheme() {
     return "light";
   }
 }
