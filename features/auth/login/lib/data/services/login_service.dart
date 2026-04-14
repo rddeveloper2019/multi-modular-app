@@ -1,6 +1,3 @@
-// Удалите эту строку, если не используете HttpClient, File, Directory и т.д.
-// import 'dart:io';
-
 import 'package:dio/dio.dart';
 import 'package:login/data/response/login_response.dart';
 import 'package:retrofit/retrofit.dart';
