@@ -11,13 +11,16 @@ environment:
 dependencies:
   datastore:
     path: "../../../core/datastore"
+
   flutter:
     sdk: flutter
   dio: 5.9.2
+  retrofit: ^4.9.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  retrofit_generator: ^10.2.5
 
 flutter:
