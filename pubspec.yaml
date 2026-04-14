@@ -48,13 +48,15 @@ melos:
         get_it: ^9.2.1
         injectable: ^2.7.1+4
         json_annotation: ^4.11.0
-        pretty_dio_logger: ^1.4.0
         cupertino_icons: ^1.0.8
+        pretty_dio_logger: ^1.4.0
+        retrofit: ^4.9.0
 
       dev_dependencies:
         injectable_generator: ^2.12.1
         json_serializable: ^6.13.1
         build_runner: ^2.13.1
+        retrofit_generator: ^10.2.5
         flutter_lints: ^6.0.0
 
         flutter_test:
