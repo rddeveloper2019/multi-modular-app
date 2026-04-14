@@ -48,9 +48,7 @@ melos:
         get_it: ^9.2.1
         injectable: ^2.7.1+4
         json_annotation: ^4.11.0
-        cupertino_icons:
-          ^1.0.8
-          # git: https://github.com/SamJakob/uni_links_macos.git
+        cupertino_icons: ^1.0.8
 
       dev_dependencies:
         injectable_generator: ^2.12.1
