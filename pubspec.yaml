@@ -49,6 +49,7 @@ melos:
         injectable: ^2.7.1+4
         json_annotation: ^4.11.0
         cupertino_icons: ^1.0.8
+        pretty_dio_logger: ^1.4.0
 
       dev_dependencies:
         injectable_generator: ^2.12.1
