@@ -1,0 +1,25 @@
+name: datastore
+resolution: workspace
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.11.3
+  flutter: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get_it: ^9.2.1
+  injectable: ^2.7.1+4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  injectable_generator: ^2.12.1
+  json_serializable: ^6.13.1
+  build_runner: ^2.13.1
+
+flutter:

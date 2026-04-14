@@ -11,6 +11,8 @@ environment:
 dependencies:
   app_settings:
     path: features/settings/app_settings
+  datastore:
+    path: core/datastore
   flutter:
     sdk: flutter
 
@@ -59,7 +61,7 @@ melos:
           sdk: flutter
 
       hooks:
-        # post: dart pub run build_runner build -d
+        post: dart run build_runner build -d
   scripts:
     hello:
       name: hey
@@ -76,6 +78,7 @@ melos:
 
 workspace:
   - core/data
+  - core/datastore
   - core/domain
   - core/presentation
   - features/auth/login
