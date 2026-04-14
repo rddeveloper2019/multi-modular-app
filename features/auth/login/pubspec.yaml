@@ -9,6 +9,8 @@ environment:
   flutter: ">=3.0.0 <4.0.0"
 
 dependencies:
+  datastore:
+    path: "../../../core/datastore"
   flutter:
     sdk: flutter
   dio: 5.9.2

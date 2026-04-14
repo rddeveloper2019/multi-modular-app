@@ -1,5 +1,6 @@
 import 'package:app_settings/provider/app_settings_provider.dart';
 import 'package:injectable/injectable.dart';
+import 'package:multimodular_app/di/main_utils.dart';
 
 @Injectable(as: AppSettingsProvider, env: [Environment.prod])
 class ProdAppSettingsProviderImpl implements AppSettingsProvider {
@@ -18,6 +19,7 @@ class ProdAppSettingsProviderImpl implements AppSettingsProvider {
 class DevAppSettingsProviderImpl implements AppSettingsProvider {
   @override
   String getAppLanguage() {
+    print('(**) => MainUtils.getName():  ${MainUtils.getName()}');
     return "russian";
   }
 
