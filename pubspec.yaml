@@ -51,6 +51,7 @@ melos:
         cupertino_icons: ^1.0.8
         pretty_dio_logger: ^1.4.0
         retrofit: ^4.9.0
+        dartz: ^0.10.1
 
       dev_dependencies:
         injectable_generator: ^2.12.1
