@@ -1,11 +1,12 @@
 import 'package:app_settings/provider/app_settings_provider.dart';
+import 'package:datastore/provider/session_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 import 'package:multimodular_app/di/injection.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  configureDependencies(Environment.prod);
+  configureDependencies(Environment.dev);
   runApp(const MyApp());
 }
 
@@ -43,6 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     final appSettingsProvider = getIt<AppSettingsProvider>();
+    final sessionProvider = getIt<SessionProvider>();
 
     return Scaffold(
       appBar: AppBar(
@@ -56,6 +58,10 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Text('App language: ${appSettingsProvider.getAppLanguage()}'),
             Text('App Theme: ${appSettingsProvider.getTheme()}'),
+            Text('App Theme: ${sessionProvider.getClientId()}'),
+            Text('App Theme: ${sessionProvider.getUserId()}'),
+            Text('App Theme: ${sessionProvider.getAccessToken()}'),
+            Text('App Theme: ${sessionProvider.getRefreshToken()}'),
           ],
         ),
       ),
